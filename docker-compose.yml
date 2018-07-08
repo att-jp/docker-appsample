@@ -1,0 +1,13 @@
+version: '2'
+services:
+  app:
+    image: shkawan/appsample:v8.00
+    environment:
+      - MONGODB_URI=mongodb://mongodb
+    ports:
+      - 58025:8000
+
+  mongodb:
+    image: mongo:3.6.0
+    volumes:
+      - /tmp/mongodb:/data/db

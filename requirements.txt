@@ -1,0 +1,5 @@
+DateTime==4.1.1
+bottle==0.12.13
+pymongo==3.4.0
+requests==2.10.0
+gunicorn
